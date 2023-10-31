@@ -1,7 +1,4 @@
 //EXERCISE-ARRAY 1
-
-const { ReplaceSource } = require("webpack-sources");
-
 /*
 //Declare an empty array
 
@@ -67,7 +64,7 @@ console.log(itCompanies[6].toUpperCase());
 Google, Microsoft, Apple, IBM,Oracle and Amazon
 are big IT companies. Using join() method
 
-console.log(itCompanies.join());
+console.log(itCompanies.join() + " are big IT companies");
 
 /*Check if a certain company exists in the
 itCompanies array. If it exist return the company
@@ -80,7 +77,7 @@ if(itCompanies.includes('Appl'))
 else{
     console.log("company does not found");
 }
-*/
+
 
 
 
@@ -108,18 +105,16 @@ console.log(shoppingCart.splice(4,1));
 console.log(shoppingCart);
 
 //modifying tea to 'Green tee'
-/*
-if(shoppingCart[3]=='Tea')
-{
-    console.log(shoppingCart[3].replace("Green Tea"));
-}
 
+let index=3;
+let new1="Green Tea";
+shoppingCart[index]=new1;
 console.log(shoppingCart);
-*/
+
 
 /* In countries array check if 'India' exists in the array
 if it exists print 'INDIA'. If it does not exist add to
-the countries list.*/
+the countries list.
 
 let countries=['India','Pakistan','USA','UK','China'];
 if(countries.includes('India')){
@@ -131,11 +126,51 @@ else{
 
 console.log(countries);
 
+/* Concatenate the following two arrays and store it
+in a fullStack variable.
+['HTML','CSS','JS','React'] ['Node','Express','MongoDB']
+
 let frnt=['HTML','CSS','JS','React'];
 let bknd=['Node','Express','MongoDB'];
 
-let fullStack=frnd+bknd;
-console.log(fullStack);
+let fullStack=console.log(frnt.concat(bknd));*/
+
+
+
+//Exercise -Array 3
+
+/*The following is an array of 10 students ages: var
+ages = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24]
+Sort the array and find the min and max age
+Find the median age(one middle item or two
+middle items divided by two)
+Find the average age(all items divided by
+number of items)
+Find the range of the ages(max minus min)
+Compare the value of (min - average) and (max
+- average), use abs() method  
+
+var ages=[19, 22, 19, 24, 20, 25, 26, 24, 25, 24];
+//sorting array
+ages.sort();
+console.log(ages);
+
+//min age
+console.log("min age:",ages[0]);
+//max age
+console.log("max age:",ages[9]);
+
+//median age
+median_age=console.log("median age:",(ages[4]+ages[5])/2);
+
+//avg age
+let avg_age=(19+19+20+22+24+24+24+25+25+26)/10;
+console.log("avg age:",avg_age);
+console.log("range_of_ages:",age[0]-avg_age);
+//console.log(,ages[0]-ages[9]);
+*/
+
+
 
 
 
